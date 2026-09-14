@@ -1,0 +1,12 @@
+{
+  "name": "student-records",
+  "version": "1.0.0",
+  "description": "Simple student records REST API using http module and fs",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Priyanshu Gupta",
+  "license": "ISC"
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Priyanshu Gupta",
+    "rollNo": "2300320120001",
+    "branch": "CSE",
+    "year": "2nd Year",
+    "semester": 4,
+    "email": "priyanshug1408@gmail.com",
+    "phone": "9876543210",
+    "city": "Ghaziabad"
+  },
+  {
+    "id": 2,
+    "name": "Aman Verma",
+    "rollNo": "2300320120002",
+    "branch": "CSE",
+    "year": "2nd Year",
+    "semester": 4,
+    "email": "aman.verma@gmail.com",
+    "phone": "9876543211",
+    "city": "Noida"
+  },
+  {
+    "id": 3,
+    "name": "Rahul Sharma",
+    "rollNo": "2300320120003",
+    "branch": "IT",
+    "year": "2nd Year",
+    "semester": 4,
+    "email": "rahul.sharma@gmail.com",
+    "phone": "9876543212",
+    "city": "Delhi"
+  }
+]
