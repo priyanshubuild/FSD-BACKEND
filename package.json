@@ -1,0 +1,16 @@
+{
+  "name": "fsd-backend",
+  "version": "1.0.0",
+  "description": "Full Stack Development 2nd Year Coursework",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyanshubuild/FSD-BACKEND.git"
+  },
+  "author": "Priyanshu Gupta",
+  "license": "ISC",
+  "type": "module",
+  "main": "class/app.js",
+  "scripts": {
+    "start": "node class/app.js"
+  }
+}
