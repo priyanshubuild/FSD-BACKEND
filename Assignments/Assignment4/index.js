@@ -109,7 +109,7 @@ async function editRequest(id) {
         // Update UI states
         formTitle.textContent = "Edit Request";
         submitBtn.textContent = "Update Request";
-        cancelBtn.style.display = "inline-block";
+        cancelBtn.style.display = "inline-flex";
 
         window.scrollTo({ top: 0, behavior: "smooth" });
     } catch (error) {
@@ -153,7 +153,17 @@ function renderRequests(requests) {
     requestCount.textContent = `${requests.length} Request${requests.length === 1 ? "" : "s"}`;
 
     if (!requests || requests.length === 0) {
-        requestsList.innerHTML = `<div class="empty-state">No requests submitted yet. Use the form above to create one.</div>`;
+        requestsList.innerHTML = `
+            <div class="empty-state">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#86868b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 8px;">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <p style="font-weight: 500; color: #1d1d1f; margin-bottom: 3px;">No Requests Yet</p>
+                <p style="font-size: 0.84rem; color: #86868b;">Campus inquiries you submit will appear here.</p>
+            </div>
+        `;
         return;
     }
 
