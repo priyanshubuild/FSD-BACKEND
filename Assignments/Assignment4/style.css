@@ -68,10 +68,6 @@ body {
     color: var(--text-primary);
 }
 
-.apple-icon {
-    fill: var(--text-primary);
-}
-
 .nav-subtitle {
     font-size: 0.8rem;
     color: var(--text-secondary);
