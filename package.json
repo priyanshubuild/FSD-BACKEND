@@ -12,5 +12,10 @@
   "main": "class/app.js",
   "scripts": {
     "start": "node class/app.js"
-  }
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/priyanshubuild/FSD-BACKEND/issues"
+  },
+  "homepage": "https://github.com/priyanshubuild/FSD-BACKEND#readme"
 }
