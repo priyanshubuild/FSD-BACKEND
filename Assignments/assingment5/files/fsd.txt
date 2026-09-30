@@ -1,0 +1,3 @@
+FSD
+
+Full Stack Development (FSD) covers building both the frontend and backend of web applications.

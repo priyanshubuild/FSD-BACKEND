@@ -1,0 +1,3 @@
+Backend
+
+The backend handles server-side logic, data, and requests for a web application.
