@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Download Files</title>
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Download Files</h1>
+  <p>Search for a file and download it.</p>
+
+  <input id="search" type="search" placeholder="Search files">
+
+  <div id="files">
+    <p>FSD <a href="/files/fsd.txt" download>Download</a></p>
+    <p>React <a href="/files/react.txt" download>Download</a></p>
+    <p>Backend <a href="/files/backend.txt" download>Download</a></p>
+  </div>
+
+  <p id="empty" hidden>No matching files.</p>
+
+  <script>
+    const search = document.querySelector("#search");
+    const files = [...document.querySelectorAll("#files p")];
+    const empty = document.querySelector("#empty");
+
+    search.addEventListener("input", () => {
+      const query = search.value.toLowerCase();
+      let visibleFiles = 0;
+
+      files.forEach((file) => {
+        const matches = file.textContent.toLowerCase().includes(query);
+        file.hidden = !matches;
+        if (matches) visibleFiles++;
+      });
+
+      empty.hidden = visibleFiles > 0;
+    });
+  </script>
+</body>
+</html>
